@@ -26,9 +26,12 @@ namespace BTreeEmptyContainerFinderProject
                 Console.WriteLine("No of balls to pass into binary tree:");
                 var noOfBallsToPassIntoBinaryTree = Convert.ToInt32(Console.ReadLine());
                 //Traversal Of GateNodes Branches with No oF balls
-                var EmptyContainers = bTreeCreationAndTraversalLogicObj.GateNodeTreeTraversalForAllBallsToFindEmptyContainer(noOfBallsToPassIntoBinaryTree);
-                Console.WriteLine("Empty Containers(starting first container from left):");
-                foreach (var emptyContainer in EmptyContainers)
+                var emptyContainers = bTreeCreationAndTraversalLogicObj.GateNodeTreeTraversalForAllBallsToFindEmptyContainer(noOfBallsToPassIntoBinaryTree);
+
+                Console.WriteLine("------------------------------------------------------------------------------------------------------------------");
+               Console.WriteLine("Total Empty Containers:{0}", emptyContainers.Count());
+                Console.WriteLine("Empty Containers( starting first container from left.):");
+                foreach (var emptyContainer in emptyContainers)
                 {
 
                     Console.WriteLine( "Node ID : {0}, Container ID {1}",emptyContainer.NodeId, emptyContainer.containerId);
