@@ -19,6 +19,8 @@ namespace BTreeCreationAndTraversalLogic
         private bool _isNodeVisited;
         private byte _nodeStatus;
         private int _nodeId;
+        private int _containerId;
+
         public IEnumerable<int> ChildrenGateNodes
         {
             get { return _childrenGateNodeIds; }
@@ -62,6 +64,12 @@ namespace BTreeCreationAndTraversalLogic
         {
             get { return _nodeId; }
             set { _nodeId = value; }
+        }
+
+        public int containerId
+        {
+            get { return _containerId; }
+            set { _containerId = value; }
         }
 
     }

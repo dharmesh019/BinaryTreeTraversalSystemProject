@@ -11,14 +11,34 @@ namespace BTreeEmptyContainerFinderProject
     {
         static void Main(string[] args)
         {
-            Console.ReadLine();
-            GateNodeTree BTreeCreationAndTraversalLogicObj = new GateNodeTree();
+            Console.WriteLine("Welcome to Binary Tree Traversal System");
+           // Console.ReadLine();
+            GateNodeTree bTreeCreationAndTraversalLogicObj = new GateNodeTree();
+            Console.WriteLine("Please enter depth of the binary tree:");
+            try
+            {
+                var depthOfBinaryTree = Convert.ToInt32(Console.ReadLine());
+                //Initialization of Binary Tree of GateNodes
+                bTreeCreationAndTraversalLogicObj.CreateGateNodeTree(depthOfBinaryTree);
+                Console.WriteLine("No of balls to pass into binary tree:");
+                var noOfBallsToPassIntoBinaryTree = Convert.ToInt32(Console.ReadLine());
+                //Traversal Of GateNodes Branches with No oF balls
+                var EmptyContainers = bTreeCreationAndTraversalLogicObj.TreeBranchTraversalForAllBallsToFindEmptyContainer(noOfBallsToPassIntoBinaryTree);
+                Console.WriteLine("Empty Containers(starting first container from left):");
+                foreach (var emptyContainer in EmptyContainers)
+                {
 
-            //Initialization of Binary Tree of GateNodes
-            BTreeCreationAndTraversalLogicObj.CreateGateNodeTree(4);
+                    Console.WriteLine( "Node ID : {0}, Container ID {1}",emptyContainer.NodeId, emptyContainer.containerId);
+                }
+                Console.ReadLine();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+           
 
-            //Traversal Of GateNodes Branches with No oF balls
-            
         }
     }
 }
