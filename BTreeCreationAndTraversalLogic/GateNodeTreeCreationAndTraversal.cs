@@ -1,13 +1,17 @@
-﻿using System;
+﻿using BTreeCreationAndTraversal.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BTreeCreationAndTraversalLogic
+
+namespace GateNodeTreeCreationAndTraversal
 {
-    public class GateNodeTree
+   
+
+    public class GateNodeTree : IGateNodeTree
     {
         #region private properties and methods
         private const int Two = 2;
@@ -71,7 +75,7 @@ namespace BTreeCreationAndTraversalLogic
             
         }
 
-        public void CreateGateNodeTree(int depth)
+        public void InitializeGateNodeTree(int depth)
        {
            Random r = new Random();
            int containerId = 0;
@@ -91,7 +95,7 @@ namespace BTreeCreationAndTraversalLogic
        }
      
         //Traverse through binary tree for passsed number of balls and return empty containers at the end
-        public IEnumerable<GateNode> TreeBranchTraversalForAllBallsToFindEmptyContainer(int noOfBalls)
+        public IEnumerable<GateNode> GateNodeTreeTraversalForAllBallsToFindEmptyContainer(int noOfBalls)
         {
             for (int ballIndex = 0; ballIndex < noOfBalls; ballIndex++)
             {

@@ -49,9 +49,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BTreeCreationAndTraversalLogic\BTreeCreationAndTraversalLogic.csproj">
-      <Project>{f70bdc4b-c936-47c1-851c-2383849b0a08}</Project>
-      <Name>BTreeCreationAndTraversalLogic</Name>
+    <ProjectReference Include="..\BTreeCreationAndTraversal.Interfaces\BTreeCreationAndTraversal.Interfaces.csproj">
+      <Project>{B95EEAAE-5E58-47A5-AEEC-45E3362673BC}</Project>
+      <Name>BTreeCreationAndTraversal.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FactoryOfBusinessObjects\FactoryOfBusinessObjects.csproj">
+      <Project>{fcec7389-7408-46af-8a56-5b1230038f06}</Project>
+      <Name>FactoryOfBusinessObjects</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
