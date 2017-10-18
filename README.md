@@ -3,4 +3,6 @@ it gets the depth of the binary tree to generate and also gets the input of no o
 
 
 --Time spent to complete the whole test
--- 
+-- 1 hour analysing the best possible solution
+-- 2 hours to implement the logic and testing the outcome.
+
