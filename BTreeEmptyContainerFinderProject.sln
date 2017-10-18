@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26403.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTreeEmptyContainerFinderProject", "BTreeEmptyContainerFinderProject\BTreeEmptyContainerFinderProject.csproj", "{3FCF3F2D-44B0-43D5-BF25-36E5600E0497}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTreeCreationAndTraversalLogic", "BTreeCreationAndTraversalLogic\BTreeCreationAndTraversalLogic.csproj", "{F70BDC4B-C936-47C1-851C-2383849B0A08}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{3FCF3F2D-44B0-43D5-BF25-36E5600E0497}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3FCF3F2D-44B0-43D5-BF25-36E5600E0497}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3FCF3F2D-44B0-43D5-BF25-36E5600E0497}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F70BDC4B-C936-47C1-851C-2383849B0A08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F70BDC4B-C936-47C1-851C-2383849B0A08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F70BDC4B-C936-47C1-851C-2383849B0A08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F70BDC4B-C936-47C1-851C-2383849B0A08}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
