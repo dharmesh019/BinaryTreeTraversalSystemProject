@@ -27,8 +27,21 @@ namespace BTreeEmptyContainerFinderProject
                         continue;
 
 
+
                     //Initialization of Binary Tree of GateNodes
                     bTreeCreationAndTraversalLogicObj.InitializeGateNodeTree(depthOfBinaryTree);
+
+                    Console.WriteLine("------------------------------------------------------------------------------------------------------------------");
+                    Console.WriteLine("Initial state of binary tree including gate direction for each node.");
+                    //displaying the initial stage of the binary tree
+                    var allnodes= bTreeCreationAndTraversalLogicObj.GateAllNodes();
+                    foreach(var node in allnodes)
+                    {
+                        Console.WriteLine("Node ID : {0} , Gate Direction: {1} , Container ID: {2} ", node.NodeId, node.NodeStatus == 1 ? "Left" : "Right", node.containerId > 0 ? node.containerId.ToString(): "");
+                    }
+                    Console.WriteLine("In above, Containers are the leaf nodes of the binary tree where balls will be stored!");
+                    Console.WriteLine("------------------------------------------------------------------------------------------------------------------");
+
                     Console.WriteLine("No of balls to pass into binary tree:");
                     var noOfBallsToPassIntoBinaryTree = Convert.ToInt32(Console.ReadLine());
                     //Traversal Of GateNodes Branches with No oF balls

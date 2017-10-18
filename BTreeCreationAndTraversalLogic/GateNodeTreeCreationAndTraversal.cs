@@ -103,5 +103,10 @@ namespace GateNodeTreeCreationAndTraversal
             }
             return _bTreeGateNodes.Where(x => x.IsNodeVisited == false && x.containerId > 0).ToList();
         }
+
+        public IEnumerable<GateNode> GateAllNodes()
+        {
+            return _bTreeGateNodes.ToList();
+        }
     }
 }

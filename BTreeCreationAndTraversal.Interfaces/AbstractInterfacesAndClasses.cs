@@ -11,6 +11,7 @@ namespace BTreeCreationAndTraversal.Interfaces
 
         void InitializeGateNodeTree(int depth);
         IEnumerable<GateNode> GateNodeTreeTraversalForAllBallsToFindEmptyContainer(int noOfBalls);
+        IEnumerable<GateNode> GateAllNodes();
     }
 
     public class GateNode
